@@ -20,7 +20,7 @@ y <- as.matrix(out)
 estimator <- ((ginv(t(xx)%*%xx))%*%t(xx))%*%(y)
 
 dd <- data.frame(x0*estimator[1]+train$X1*estimator[2]+train$X2*estimator[3])
-write.csv(dd,"abc.csv")
+write.csv(dd,"estimates.csv")
 
 plot(dd$x0...estimator.1....train.X1...estimator.2....train.X2...estimator.3.-out$Y) #Shows residual are normally distributed
 
