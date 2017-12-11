@@ -6,9 +6,9 @@ for(l in 1:100)
   k<-0
   for(i in 1:1000)  
   {  
-    n<-100                              #Sample Size
+    n<-100                              #Sample Size.
     x<-rnorm(n, mean = 0, sd = 1)       #Sample from Gaussian Distribution.
-    mn<-mean(x)                         #Value of Test Statistic for mean Estimation
+    mn<-mean(x)                         #Value of Test Statistic for mean Estimation.
     #print(mn)
     confidence<-0.99                    #confidence interval
     a<-qnorm((confidence+1)/2,0,1)      #The corresponding value at the particular level of confidence.      
